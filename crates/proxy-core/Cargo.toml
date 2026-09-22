@@ -1,0 +1,47 @@
+[package]
+name = "proxy-core"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+redact = { path = "../redact" }
+providers = { path = "../providers" }
+
+tokio.workspace = true
+tokio-util.workspace = true
+futures-util.workspace = true
+hyper.workspace = true
+hyper-util.workspace = true
+http-body-util.workspace = true
+http.workspace = true
+bytes.workspace = true
+reqwest.workspace = true
+tokio-tungstenite.workspace = true
+zstd.workspace = true
+flate2.workspace = true
+
+rustls.workspace = true
+tokio-rustls.workspace = true
+rustls-pemfile.workspace = true
+rcgen.workspace = true
+rustls-native-certs = "0.8"
+x509-parser = "0.18"
+sha2.workspace = true
+hex.workspace = true
+time = "0.3"
+
+serde.workspace = true
+serde_json.workspace = true
+chrono.workspace = true
+uuid.workspace = true
+anyhow.workspace = true
+thiserror.workspace = true
+tracing.workspace = true
+parking_lot.workspace = true
+
+[dev-dependencies]
+tracing-subscriber.workspace = true
+uuid.workspace = true
+tokio-tungstenite = { workspace = true, features = ["handshake"] }
+zstd.workspace = true

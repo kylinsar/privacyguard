@@ -1,0 +1,18 @@
+[package]
+name = "redact"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+regex.workspace = true
+aho-corasick.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+hmac.workspace = true
+sha2.workspace = true
+hex.workspace = true
+rand.workspace = true
+parking_lot.workspace = true
+thiserror.workspace = true
+tracing.workspace = true

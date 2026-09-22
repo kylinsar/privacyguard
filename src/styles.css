@@ -1,0 +1,95 @@
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  user-select: none;
+}
+
+code,
+pre,
+.mono {
+  font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+  user-select: text;
+}
+
+.pg-layout {
+  height: 100%;
+}
+
+.pg-sider .brand {
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 20px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.pg-sider .brand .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #94a3b8;
+}
+
+.pg-sider .brand .dot.on {
+  background: #22c55e;
+  box-shadow: 0 0 8px #22c55e;
+}
+
+.pg-content {
+  padding: 24px;
+  overflow: auto;
+  height: 100%;
+}
+
+.pg-page-title {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.pg-kv {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 6px 12px;
+  font-size: 13px;
+}
+
+.pg-kv .k {
+  color: #64748b;
+}
+
+.pem {
+  max-height: 200px;
+  overflow: auto;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: pre;
+}
+
+.hl {
+  background: #fde68a;
+  border-radius: 3px;
+  padding: 0 2px;
+}
+
+.selectable {
+  user-select: text;
+}
+
+.pg-list-item:hover {
+  background: #f3f4f6;
+}
+.pg-list-item.active {
+  background: #eff6ff;
+}
